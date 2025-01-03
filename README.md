@@ -1,15 +1,12 @@
 # Savorly
 
-A web application that simplifies cooking by decluttering recipes. Users can access clean, distraction-free recipes, save them, and organize their favorites. Built with **Next.js**, **Prisma**, and a suite of modern web technologies.
+A web application that simplifies cooking by decluttering recipes. Users can access clean, distraction-free recipes, save them, and organize their favorites. Built with **Next.js** and **TypeScript**.
 
 ## Features
 
 - 🧹 **Declutter Recipes**: Remove unnecessary content and focus on ingredients and instructions.  
 - 📂 **Save, Edit & Organize Recipes**: Manage your favorite recipes in one place.  
-- 🔒 **Secure User Accounts**: Seamlessly manage your recipes with personalized accounts using **NextAuth**.  
-- 🚀 **Fast and Modern**: Built with Next.js and TypeScript for optimal performance.  
 
----
 
 ## Getting Started
 
@@ -17,8 +14,8 @@ Follow these instructions to set up the project locally.
 
 ### Prerequisites
 
-- **Node.js** (v18 or later)
-- **npm** or **yarn** (for managing dependencies)
+- **Node.js**
+- **npm**, **yarn** or similar
 
 
 ### Installation
@@ -26,8 +23,8 @@ Follow these instructions to set up the project locally.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/recipe-declutter.git
-   cd recipe-declutter
+   git clone https://github.com/JoarHansson/Savorly.git
+   cd savorly
    ```
 
 2. Install dependencies
@@ -38,12 +35,12 @@ Follow these instructions to set up the project locally.
 
 3. Set up the environment:
 
-Create a `.env` file in the root directory and include necessary environment variables. Key variables might include:
-- `DATABASE_URL` for Prisma
-- `NEXTAUTH_SECRET` for authentication
-- `NEXTAUTH_URL` for app URL
+Create a `.env` file in the root directory and include the necessary environment variables:
+- `DATABASE_URL` and `DIRECT_URL`, for database connection (We use [Supabase](https://supabase.com/) - easy to setup)
+- `NEXTAUTH_SECRET` for NextAuth (A hash used to encrypt the JWT)
+- `NEXTAUTH_URL` for app URL (`http://localhost:3000` for development)
 
-### Installation
+### Running the app
 
 Run the development server:
 
@@ -53,43 +50,14 @@ Run the development server:
 
 Visit http://localhost:3000 to see the app in action.
 
-### Production
-
-To build and start the application for production:
-
-1. Build the app:
-
-   ```bash
-   npm run build
-   ```
-
-2. Install required dependencies for Playwright (used for scraping):
-
-   ```bash
-   npm run postbuild
-   ```
-3. Start the app
-    ```bash
-   npm start
-   ```
-
-### Scripts
-
-- `dev`: Starts the development server.
-- `build`: Builds the app for production.
-- `postbuild`: Installs Playwright and its dependencies after building.
-- `start`: Starts the production server.
-- `lint`: Runs ESLint to check code quality.
-- `seed`: Seeds the database using Prisma.
-
 ### Technologies used
 
 - **Next.js**: Framework for server-rendered React applications.
-- **Prisma**: Database ORM for type-safe database queries.
-- **NextAuth**: Authentication library for secure user accounts.
-- **Playwright**: End-to-end testing and scraping framework.
+- **Prisma**: Database ORM.
+- **NextAuth**: Authentication library.
+- **Playwright**: Web scraping.
 - **TypeScript**: For type-safe code.
-- **Mantine**: Modern React UI library.
+- **Mantine**: UI library.
 
 ### License
 

@@ -24,7 +24,7 @@ Follow these instructions to set up the project locally.
 
    ```bash
    git clone https://github.com/JoarHansson/Savorly.git
-   cd savorly
+   cd Savorly
    ```
 
 2. Install dependencies
@@ -33,7 +33,13 @@ Follow these instructions to set up the project locally.
    npm install
    ```
 
-3. Set up the environment:
+3. Install playwright browsers and dependencies
+
+   ```bash
+   npx playwright install && npx playwright install-deps
+   ```
+
+4. Set up the environment:
 
 Create a `.env` file in the root directory and include the necessary environment variables:
 - `DATABASE_URL` and `DIRECT_URL`, for database connection (We use [Supabase](https://supabase.com/) - easy to setup)

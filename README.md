@@ -2,13 +2,15 @@
 
 A web application that simplifies cooking by decluttering recipes. Users can access clean, distraction-free recipes, save them, and organize their favorites. Built with **Next.js** and **TypeScript**.
 
+See the project live [here](https://savorly.site)!
+
 ## Features
 
-- 🧹 **Declutter Recipes**: Remove unnecessary content and focus on ingredients and instructions.  
-- 📂 **Save, Edit & Organize Recipes**: Manage your favorite recipes in one place.  
+- **Declutter Recipes**: Remove unnecessary content and focus on ingredients and instructions.  
+- **Save, Edit & Organize Recipes**: Manage your favorite recipes in one place.  
 
 
-## Getting Started
+## Run locally
 
 Follow these instructions to set up the project locally.
 
@@ -55,6 +57,8 @@ Run the development server:
    ```
 
 Visit http://localhost:3000 to see the app in action.
+
+## Project Details
 
 ### Technologies used
 
